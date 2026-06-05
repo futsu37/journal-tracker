@@ -27,8 +27,6 @@ function App() {
   },[data])
   return (
     <>
-    <link rel="icon" type="image/png" href="/icon.png"></link>
-    <title>Journal Tracker</title>
       <Calendar data={data}
         setData={setData}
         month={month}

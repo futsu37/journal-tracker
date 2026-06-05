@@ -1,5 +1,6 @@
 {
   "name": "journaling-tracker",
+  "homepage": "https://futsu37.github.io/journal-tracker/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tiptap/extension-color": "^3.23.4",
@@ -17,6 +20,7 @@
     "@tiptap/react": "^3.23.4",
     "@tiptap/starter-kit": "^3.23.4",
     "dayjs": "^1.11.20",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
