@@ -1,0 +1,40 @@
+.journal-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.journal-styling {
+  border: 4px solid black;
+  background: white;
+  border-style:double;
+}
+.journal-inputs {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+.style-inputs-container {
+  border-right: 1px solid black;
+  display: inline-block;
+  align-content: center;
+  margin-left: 10px;
+  padding-right: 10px;
+  flex-direction: row;
+}
+.journal-button:hover {
+  background-color: rgb(226, 226, 226);
+}
+.journal-text-input {
+  margin: 6px;
+}
+
+.journal-text-input .ProseMirror {
+  overflow-y: auto;
+  outline: none;
+  box-sizing: border-box;
+  width: 900px;
+  height: 280px;
+}
+.no-border {
+  border: none;
+}

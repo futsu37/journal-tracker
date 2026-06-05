@@ -1,0 +1,14 @@
+.top-panel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.month-label {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  background-color:darkgrey;
+  padding: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,11 @@
+.streak-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.streak-text {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}

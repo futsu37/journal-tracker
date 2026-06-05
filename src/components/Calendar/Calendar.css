@@ -1,0 +1,6 @@
+.container {
+  background-color: rgba(136, 255, 136, 0.554);
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}

@@ -1,0 +1,16 @@
+.journal-button {
+  font-weight: 700;
+  padding: 10px 14px;
+  margin: 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.2s;
+  min-width: 38px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.active-input {
+  background-color: rgb(233, 233, 233);
+}

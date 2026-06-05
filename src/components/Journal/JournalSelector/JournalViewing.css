@@ -1,0 +1,9 @@
+.journal-name {
+  display: inline-block;
+  margin: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

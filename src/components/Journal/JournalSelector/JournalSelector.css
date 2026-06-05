@@ -1,0 +1,29 @@
+.journal-selector-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.journal-selector-button {
+  padding: 6px 12px;
+  font-size: 22px;
+  color: yellow;
+  background-color: yellowgreen;
+  border: 2px solid gold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin: 0px 5px;
+}
+.journal-selector-button:hover {
+  opacity: 0.75;
+}
+.journal-selector-button:active {
+  opacity: 0.5;
+}
+.journal-selector-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+

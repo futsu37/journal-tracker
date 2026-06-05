@@ -1,0 +1,7 @@
+.label {
+  margin-right: 6px;
+}
+.dropdown-input-container {
+  display: flex;
+  align-items: center;
+}

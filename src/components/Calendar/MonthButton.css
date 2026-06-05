@@ -1,0 +1,17 @@
+.month-change-button {
+  color: whitesmoke;
+  font-size: 30px;
+  background-color: rgb(66, 158, 66);
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.month-change-button:hover {
+opacity: 0.8;
+}
+.month-change-button:active {
+opacity: 0.5;
+}

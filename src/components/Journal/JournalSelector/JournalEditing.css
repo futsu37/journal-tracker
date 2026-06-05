@@ -1,0 +1,15 @@
+.editing-input {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.editing-notation {
+  font-size: 14px;
+  margin-top: -16px;
+}
+
+.editing-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px; 
+}

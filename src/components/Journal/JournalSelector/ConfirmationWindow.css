@@ -1,0 +1,59 @@
+.confirmation-window-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  z-index: 2;
+}
+.confirmation-panel {
+  background-color:bisque;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 640px;
+  height: 320px;
+  z-index: 3;
+}
+.red {
+  color: red;
+  font-weight: 700;
+}
+
+.confirmation-button {
+  background-color: lightcyan;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+.confirmation-button:hover {
+  opacity: 0.8;
+}
+.confirmation-button:active {
+  opacity: 0.6;
+}
+.confirmation-button:disabled {
+  opacity: 1;
+  cursor:not-allowed;
+}
+.confirmation-input {
+  font-size: 24px;
+  margin: 10px;
+}
+.confirmation-description {
+  font-size: 20px;
+  margin: 10px;
+}
+.confirmation-text {
+  font-size: 26px;
+  margin: 30px 20px;
+}

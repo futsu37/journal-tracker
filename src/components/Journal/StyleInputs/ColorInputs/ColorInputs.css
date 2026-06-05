@@ -1,0 +1,10 @@
+.color-input-container{
+  display: flex;
+  align-items: center;
+}
+.color-input {
+margin-right: 6px;
+}
+.label {
+padding-right: 2px;
+}
