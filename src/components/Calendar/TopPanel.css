@@ -11,4 +11,10 @@
   background-color:darkgrey;
   padding: 10px;
   border-radius: 10px;
+  margin: 0 10px;
+}
+@media(max-width: 768px) {
+  .top-panel-container {
+    margin-top: 10px;
+  }
 }

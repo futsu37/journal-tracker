@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding-bottom: 10px; 
+}
+@media(max-width:768px) {
+  .journal-selector-container {
+    flex-direction: column;
+  }
 }
 .journal-selector-button {
   padding: 6px 12px;

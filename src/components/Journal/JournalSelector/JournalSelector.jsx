@@ -14,17 +14,16 @@ export function JournalSelector({ data, setData, journalIdx, setJournalIdx }) {
   }, [journalIdx, data])
   return (
     <div className="journal-selector-container">
+      <SelectOptions data={data} journalIdx={journalIdx} setJournalIdx={setJournalIdx}/>
       {redacting
         ? <JournalEditing data={data} setData={setData}
         journalIdx={journalIdx} setJournalIdx={setJournalIdx} setRedacting={setRedacting}
         journalName={journalName} setJournalName={setJournalName} toggleRedacting={toggleRedacting} />
         : <>
           <JournalViewing data={data} setData={setData}
-            journalIdx={journalIdx} setJournalIdx={setJournalIdx}
             journalName={journalName} toggleRedacting={toggleRedacting} />
         </>
       }
-      <SelectOptions data={data} journalIdx={journalIdx} setJournalIdx={setJournalIdx}/>
     </div>
   );
 }

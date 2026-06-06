@@ -18,7 +18,7 @@ export function Calendar(
       <>
         <Journal data={data} setData={setData} unixId={unixId} content={content} setContent={setContent}
           journalIdx={journalIdx} setJournalIdx={setJournalIdx} />
-        <div>
+        <div className="date-grid-container">
           <TopPanel data={data} month={month} setMonth={setMonth} />
           <DateGrid unixId={unixId} setUnixId={setUnixId} data={data} month={month} journalIdx={journalIdx} />
           <Streak data={data} journalIdx={journalIdx}/>

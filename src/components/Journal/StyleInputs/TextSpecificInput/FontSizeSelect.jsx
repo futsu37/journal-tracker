@@ -4,7 +4,7 @@ export function FontSizeSelect({ editor }) {
   
   return (
     <div className="dropdown-input-container">
-      <p className="label">Font Size:</p>
+      <p className="label">Font Size</p>
       <select
         onChange={(e) => {
           editor

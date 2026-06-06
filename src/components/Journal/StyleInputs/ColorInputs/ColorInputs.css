@@ -1,10 +1,25 @@
-.color-input-container{
+.color-input-container {
   display: flex;
   align-items: center;
 }
+
 .color-input {
-margin-right: 6px;
+  margin-right: 4px;
+  width: 30px;
 }
+
 .label {
-padding-right: 2px;
+  text-align: center;
+  padding-right: 6px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media(max-width: 1024px) {
+  .color-input-container {
+    flex-direction: column;
+  }
+  .color-input {
+    margin-right: 0;
+  }
 }

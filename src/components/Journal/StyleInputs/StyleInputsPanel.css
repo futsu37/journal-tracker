@@ -1,0 +1,49 @@
+.style-inputs-container {
+  border-right: 1px solid black;
+  display: inline-block;
+  align-content: center;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.style-button-grid {}
+
+.style-text-grid {}
+
+@media(max-width: 1024px) {
+  .style-inputs-container {
+    display: grid;
+  }
+
+  .style-button-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .style-text-grid {
+    display: flex;
+  }
+}
+
+@media(max-width: 330px) {
+  .style-button-grid {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .style-text-grid {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.journal-button:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.journal-text-input {
+  margin: 6px;
+}
+
+.no-border {
+  border: none;
+}

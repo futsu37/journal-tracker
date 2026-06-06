@@ -2,7 +2,7 @@ import "./TextSpecificInput.css"
 export function TextAlignSelect({ editor }) {
   return (
     <div className="dropdown-input-container">
-      <p className="label">Text Align:</p>
+      <p className="label">Text Align</p>
       <select
         onChange={(e) => {
     editor.chain().focus().setTextAlign(e.target.value).run()

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./JournalEditing.css"
 import { ConfirmationWindow } from "./ConfirmationWindow";
 export function JournalEditing({ data, setData,
@@ -21,18 +21,39 @@ export function JournalEditing({ data, setData,
     setData(newData);
   }
 
+  const [isLowerResolution, setIsLowerResolution] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLowerResolution(window.innerWidth <= 768);
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [])
+
   return (
     <>
-      <button className="journal-selector-button" onClick={toggleConfirmationWindow}>Delete Journal</button>
       <div className="editing-container">
         <p className="editing-notation">Characters left: {maxLength - journalName.length}</p>
         <input className="editing-input" maxLength={maxLength} onChange={handleChange} value={journalName}></input>
       </div>
-      <button className="journal-selector-button" onClick={() => { toggleRedacting(); saveName() }}>Save</button>
+      {isLowerResolution ?
+        <div>
+          <button className="journal-selector-button" onClick={toggleConfirmationWindow}>Delete</button>
+          <button className="journal-selector-button" onClick={() => { toggleRedacting(); saveName() }}>Save</button>
+        </div>
+        :
+        <>
+          <button className="journal-selector-button" onClick={() => { toggleRedacting(); saveName() }}>Save</button>
+          <button className="journal-selector-button" onClick={toggleConfirmationWindow}>Delete</button>
+        </>
+      }
       {confirmationWindow ? <ConfirmationWindow data={data} setData={setData}
         journalIdx={journalIdx} setJournalIdx={setJournalIdx}
-        setRedacting={setRedacting} setJournalName={setJournalName} 
-        toggleConfirmationWindow={toggleConfirmationWindow}/> : <></>}
+        setRedacting={setRedacting} setJournalName={setJournalName}
+        toggleConfirmationWindow={toggleConfirmationWindow} /> : <></>}
     </>
   );
 }

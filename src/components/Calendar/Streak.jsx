@@ -39,8 +39,8 @@ export function Streak({ data, journalIdx}) {
   }
   return (
     <div className="streak-container">
-      <p className="streak-text">Best Streak: {formatStreakText(getBestStreak())}</p>
-      <p className="streak-text">Current Streak: {formatStreakText(getCurrentStreak())}</p>
+      <p className="streak-text">Max Streak: {formatStreakText(getBestStreak())}</p>
+      <p className="streak-text">Streak: {formatStreakText(getCurrentStreak())}</p>
     </div>
   );
 }

@@ -7,6 +7,11 @@
   font-size: 14px;
   margin-top: -16px;
 }
+@media(max-width: 768px) {
+  .editing-notation {
+    margin-top: 0;
+  }
+}
 
 .editing-container {
   display: flex;

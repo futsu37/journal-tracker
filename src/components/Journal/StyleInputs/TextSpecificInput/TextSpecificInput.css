@@ -1,7 +1,16 @@
 .label {
   margin-right: 6px;
 }
+
 .dropdown-input-container {
   display: flex;
   align-items: center;
+
+}
+
+@media(max-width: 1024px) {
+  .dropdown-input-container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
