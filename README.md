@@ -1,6 +1,8 @@
 # Journal Tracker 
 ![Static Badge](https://img.shields.io/badge/react-blue?style=plastic&logo=react) + ![Static Badge](https://img.shields.io/badge/vite-purple?style=plastic&logo=vite)
+
 ![logo](img/Journal_Tracker.png)
+
 ![Static Badge](https://img.shields.io/badge/site_link-dailyjournaltracker.com-blue?link=https%3A%2F%2Fwww.dailyjournaltracker.com%2F)  
 
 ## Description
