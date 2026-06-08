@@ -1,15 +1,15 @@
-#Journal Tracker 
+# Journal Tracker 
 ![Static Badge](https://img.shields.io/badge/react-blue?style=plastic&logo=react) + ![Static Badge](https://img.shields.io/badge/vite-purple?style=plastic&logo=vite)
 ![logo](img/Journal_Tracker.png)
 ![Static Badge](https://img.shields.io/badge/site_link-dailyjournaltracker.com-blue?link=https%3A%2F%2Fwww.dailyjournaltracker.com%2F)  
 
-##Description
+## Description
 Journal Tracker is a web program that allows you to track your thing via text editor. User can freely choose the calendar date to note there something and come back later.  
 
-##Visuals
+## Visuals
 ![visuals](img/testing.gif)
 
-##Installation
+## Installation
 ```bash
 git clone https://github.com/futsu37/journal-tracker.git
 cd journal-tracker
@@ -19,10 +19,10 @@ npm run dev
 
 The application will be available at:
 
-``
+`
 http://localhost:5173
-``
-##Usage
+`
+## Usage
 Create Journals for things you want to note daily/whenever you want. Switch between dates to edit/read the notes that you have wrotten.
 
 ## Contributing
@@ -62,10 +62,10 @@ If you fork this repository:
 
 You do not need the original domain to run the project locally.
 
-##License
+## License
 ![GitHub License](https://img.shields.io/github/license/futsu37/journal-tracker)
 
-##Project Status
+## Project Status
 The point of this project was to nail down some React skills. I do not intend on adding new features, only fixing bugs. If you intend to continue adding new features, then you are welcome to do so!
 
 
