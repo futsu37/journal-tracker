@@ -1,16 +1,71 @@
-# React + Vite
+#Journal Tracker 
+![Static Badge](https://img.shields.io/badge/react-blue?style=plastic&logo=react) + ![Static Badge](https://img.shields.io/badge/vite-purple?style=plastic&logo=vite)
+![logo](img/Journal_Tracker.png)
+![Static Badge](https://img.shields.io/badge/site_link-dailyjournaltracker.com-blue?link=https%3A%2F%2Fwww.dailyjournaltracker.com%2F)  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Description
+Journal Tracker is a web program that allows you to track your thing via text editor. User can freely choose the calendar date to note there something and come back later.  
 
-Currently, two official plugins are available:
+##Visuals
+![visuals](img/testing.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##Installation
+```bash
+git clone https://github.com/futsu37/journal-tracker.git
+cd journal-tracker
+npm install
+npm run dev
+```
 
-## React Compiler
+The application will be available at:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+``
+http://localhost:5173
+``
+##Usage
+Create Journals for things you want to note daily/whenever you want. Switch between dates to edit/read the notes that you have wrotten.
 
-## Expanding the ESLint configuration
+## Contributing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch:
+
+   `
+   git checkout -b feature/my-feature
+   `
+
+3. Commit your changes:
+
+   `
+   git commit -m "Add my feature"
+   `
+
+4. Push your branch:
+
+   `
+   git push origin feature/my-feature
+   `
+
+5. Open a Pull Request.
+
+## Deployment
+
+This project is configured for deployment to GitHub Pages using a custom domain for the official instance.
+
+If you fork this repository:
+
+- Remove or replace the `CNAME` file with your own domain.
+- Update any deployment URLs in `vite.config.js`, `package.json`, or GitHub Actions if applicable.
+- Configure GitHub Pages for your own repository.
+
+You do not need the original domain to run the project locally.
+
+##License
+![GitHub License](https://img.shields.io/github/license/futsu37/journal-tracker)
+
+##Project Status
+The point of this project was to nail down some React skills. I do not intend on adding new features, only fixing bugs. If you intend to continue adding new features, then you are welcome to do so!
+
+
